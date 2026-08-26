@@ -27,13 +27,11 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
 
 }
 
 nav a:hover {
     color: lightblue;
-}
-
-body {
-    background-color: rgb(50, 4, 77);
+    text-decoration: underline;
 }
