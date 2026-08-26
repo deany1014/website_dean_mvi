@@ -35,3 +35,12 @@ nav a:hover {
     color: lightblue;
     text-decoration: underline;
 }
+
+/* opdracht 2 */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
