@@ -38,9 +38,46 @@ nav a:hover {
 
 /* opdracht 2 */
 
-.image-container-01 img {
+.container-01 img {
     max-height: 40vh;
     width: 100%;
     object-fit: cover;
     
+}
+
+/* opdracht 3 */
+.container-02 {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container-02 h1 {
+    flex: 1;
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.container-02 p {
+    flex: 1;
+    margin: 0;
+    padding: 20px;
+}
+
+.kolom1, .kolom2, .kolom3 {
+    flex: 1;
+    border-radius: 10px;
+}
+
+.kolom1 {
+    background-color: lightblue;
+}
+
+.kolom2 {
+    background-color: rgb(253, 100, 100);
+}
+
+.kolom3 {
+    background-color: lightgreen;
 }
