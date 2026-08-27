@@ -38,9 +38,9 @@ nav a:hover {
 
 /* opdracht 2 */
 
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+.image-container-01 img {
+    max-height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    
 }
