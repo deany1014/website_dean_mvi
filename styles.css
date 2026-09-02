@@ -85,3 +85,15 @@ nav a:hover {
 .kolom3 {
     background-color: lightgreen;
 }
+
+/* opdracht 4 */
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
