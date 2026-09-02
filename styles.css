@@ -50,6 +50,7 @@ nav a:hover {
     display: flex;
     gap: 20px;
     padding: 20px;
+    justify-content: center;
 }
 
 .container-02 h1 {
@@ -68,6 +69,7 @@ nav a:hover {
 .kolom1, .kolom2, .kolom3 {
     flex: 1;
     border-radius: 10px;
+    max-width: 400px;
 }
 
 .kolom1 {
@@ -76,6 +78,8 @@ nav a:hover {
 
 .kolom2 {
     background-color: rgb(253, 100, 100);
+    max-width: 800px;
+    flex: 2;
 }
 
 .kolom3 {
