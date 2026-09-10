@@ -1,41 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dodo Jiu Jitsu</title>
-    
+    <meta name="description" content="DODO Jiu Jitsu Amsterdam: Gi, NoGi, BJJ en grappling voor elk niveau.">
+    <title>DODO Jiu Jitsu Amsterdam</title>
+
     <script src="static/js/partials.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body id="top">
 
     <header id="site-header"></header>
 
-    <div class="container-01">
-        <img src="static/images/Soothing-nature-backgrounds-2.jpg" alt="Placeholder Image">
-    </div>
+    <main>
+        <section class="hero section-shell" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">Amsterdam · Gi / NoGi · BJJ & grappling</p>
+                <h1 id="hero-title">Vind je weg<br><em>op de mat.</em></h1>
+                <p class="hero-intro">Een sterke basis, scherpere techniek en samen groeien. Bij DODO is iedereen welkom die wil trainen, leren en sparren.</p>
+                <div class="hero-actions">
+                    <a class="button button--primary" href="#contact">Plan een gratis proefles <span>↗</span></a>
+                    <a class="text-link" href="#over-ons">Ontdek DODO <span>↓</span></a>
+                </div>
+            </div>
+            <div class="hero-art" aria-label="DODO trainingsruimte">
+                <div class="hero-badge"><strong>01</strong><span>Jouw<br>volgende<br>ronde</span></div>
+                <div class="hero-photo"></div>
+                <div class="hero-stamp">DODO<br><span>JIU JITSU</span></div>
+            </div>
+        </section>
 
-    <div class="container-02">
-        <div class="kolom1">
-            <h1>Kolom 1</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-        </div>
+        <section class="intro-band">
+            <div class="section-shell intro-grid">
+                <p class="eyebrow">Onze manier</p>
+                <h2>Techniek met<br><em>karakter.</em></h2>
+                <p>De les begint met warming-up rondes, gaat door naar techniek en eindigt met sparringsrondes van zes minuten. Staand beginnen, eindigen met een submission.</p>
+            </div>
+        </section>
 
+        <section id="over-ons" class="about section-shell section-padding">
+            <div class="section-heading">
+                <p class="eyebrow">02 / Over ons</p>
+                <h2>Meer dan<br><em>bloed en zweet.</em></h2>
+            </div>
+            <div class="about-content">
+                <p class="lead">DODO Jiu Jitsu, geleid door Mathijs, Thijmen en Danny, draait om discipline, hard werken, respect en plezier.</p>
+                <p>Op de mat zijn we allemaal gelijk, ongeacht band, niveau of rol. We geven om jouw ontwikkeling en veiligheid en delen onze kennis en ervaring in Gi en No-Gi.</p>
+                <p>Ons doel is helder: jou helpen een complete submission-vechter te worden. We laten ons ego niet in de weg staan van onze vooruitgang.</p>
+                <blockquote>“Dit is onze weg. Dit is de weg van de DODO.”</blockquote>
+            </div>
+        </section>
 
-        <div class="kolom2">
-            <h1>Kolom 2</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-        </div>
+        <section id="rooster" class="schedule section-padding">
+            <div class="section-shell">
+                <div class="section-heading section-heading--row">
+                    <div><p class="eyebrow">03 / Rooster</p><h2>Kom trainen.</h2></div>
+                    <p>Iedereen is welkom bij elke les,<br>ongeacht niveau of ervaring.</p>
+                </div>
+                <div class="schedule-table" role="table" aria-label="Lesrooster">
+                    <div class="schedule-row schedule-row--head" role="row"><span>Dag</span><span>Tijd</span><span>Niveau</span><span></span></div>
+                    <div class="schedule-row" role="row"><strong>Dinsdag</strong><span>18:30 – 20:00</span><span>Alle niveaus</span><span class="row-arrow">↗</span></div>
+                    <div class="schedule-row" role="row"><strong>Woensdag</strong><span>17:30 – 19:00</span><span>Alle niveaus</span><span class="row-arrow">↗</span></div>
+                    <div class="schedule-row" role="row"><strong>Donderdag</strong><span>17:30 – 19:00</span><span>Alle niveaus</span><span class="row-arrow">↗</span></div>
+                    <div class="schedule-row" role="row"><strong>Zaterdag</strong><span>13:00 – 16:00</span><span>Alle niveaus</span><span class="row-arrow">↗</span></div>
+                    <div class="schedule-row" role="row"><strong>Zondag</strong><span>16:30 – 18:00</span><span>Alle niveaus</span><span class="row-arrow">↗</span></div>
+                </div>
+            </div>
+        </section>
 
+        <section id="prijzen" class="pricing section-padding section-shell">
+            <div class="section-heading"><p class="eyebrow">04 / Lidmaatschap</p><h2>Kies je<br><em>commitment.</em></h2></div>
+            <div class="price-grid">
+                <article class="price-card"><span class="card-number">01</span><h3>Drop-in</h3><p>Een losse les voor wanneer het jou uitkomt.</p><strong>€20 <small>/ les</small></strong><a href="#contact" aria-label="Kies Drop-in">↗</a></article>
+                <article class="price-card price-card--featured"><span class="card-number">02</span><h3>10-rittenkaart</h3><p>Flexibel trainen met tien lessen op zak.</p><strong>€125 <small>/ kaart</small></strong><a href="#contact" aria-label="Kies 10-rittenkaart">↗</a></article>
+                <article class="price-card"><span class="card-number">03</span><h3>Maandabonnement</h3><p>Voor wie structureel wil bouwen aan zijn spel.</p><strong>€75 <small>/ maand</small></strong><a href="#contact" aria-label="Kies maandabonnement">↗</a></article>
+            </div>
+        </section>
 
-        <div class="kolom3">
-            <h1>Kolom 3</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-        </div>
-
-    </div>
+        <section id="contact" class="contact section-padding">
+            <div class="section-shell contact-grid">
+                <div><p class="eyebrow">05 / Contact</p><h2>Zet de<br><em>eerste stap.</em></h2><p class="contact-copy">Meld je aan voor een gratis proefles en word deel van onze familie.</p><address>Sportcentrum De Pijp<br>Lizzy Ansinghstraat 88<br>1072 RD Amsterdam</address><a class="text-link" href="mailto:hello@dodojiujitsu.nl">hello@dodojiujitsu.nl <span>↗</span></a></div>
+                <form class="contact-form" action="mailto:hello@dodojiujitsu.nl" method="post" enctype="text/plain">
+                    <label for="name">Je naam</label><input id="name" name="name" type="text" required>
+                    <label for="email">Je e-mailadres</label><input id="email" name="email" type="email" required>
+                    <label for="subject">Onderwerp</label><input id="subject" name="subject" type="text" value="Gratis proefles">
+                    <label for="message">Je boodschap</label><textarea id="message" name="message" rows="4" required></textarea>
+                    <button class="button button--light" type="submit">Verstuur bericht <span>↗</span></button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer id="site-footer"></footer>
 
