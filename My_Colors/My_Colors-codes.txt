@@ -1,0 +1,11 @@
+Your selected colors:
+
+    Text: #ffffff - rgb(255, 255, 255) - hsl(0, 0%, 100%)
+    Background: #000000 - rgb(0, 0, 0) - hsl(0, 0%, 0%)
+    Primary: #df8989 - rgb(223, 137, 137) - hsl(0, 57%, 71%)
+    Secondary: #941414 - rgb(148, 20, 20) - hsl(0, 76%, 33%)
+    Accent: #fa2929 - rgb(250, 41, 41) - hsl(0, 95%, 57%)
+
+Realtime Colors link for selected colors: https://www.realtimecolors.com/?colors=ffffff-000000-df8989-941414-fa2929&fonts=Inter-Inter
+
+Thanks for using RealtimeColors.com!
