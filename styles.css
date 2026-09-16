@@ -38,8 +38,11 @@ nav {
     justify-content: space-between;
     padding:  0 5px;
     position: fixed;
-    top: 0;
-    width: 100%;
+    
+    border-radius: 10px;
+    top: 15px;
+    width: 90%;
+    left: 5%;
 }
 
 nav ul {
@@ -103,21 +106,21 @@ nav .logo img:hover {
 .container-02 {
     display: flex;
     gap: 20px;
-    padding: 20px;
+    padding: 10px;
     justify-content: center;
 }
 
 .container-02 h1 {
     flex: 1;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 10px;
     text-align: center;
 }
 
 .container-02 p {
     flex: 1;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
 }
 
 .kolom1, .kolom2, .kolom3 {
