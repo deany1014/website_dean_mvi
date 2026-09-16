@@ -2,86 +2,38 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 108px;
 }
 
-/* --- Header --- */
-
 nav {
-    box-sizing: border-box;
-    background-color: white;
-    border: 7px double black;
-    border-radius: 3px;
+    background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 82px;
-    left: 1%;
-    padding: 0 12px;
+    padding:  0 10px;
     position: fixed;
-    right: 1%;
-    top: 8px;
-    z-index: 10;
-}
-
-.logo {
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 50%;
-    color: black;
-    display: flex;
-    height: 62px;
-    justify-content: center;
-    line-height: 1;
-    width: 62px;
+    top: 0;
+    width: 100%;
 }
 
 nav ul {
     display: flex;
-    gap: 24px;
-    margin: 0;
-    padding: 10px 12px;
+    gap: 20px;
+    margin-right: 20px;
     list-style: none;
-    border: 7px solid black;
-    border-radius: 12px;
+    color: white;
+    
 }
 
 nav a {
-    color: black;
+    color: white;
     text-decoration: none;
     transition: color 0.3s;
+
 }
 
 nav a:hover {
-    color: #555;
+    color: lightblue;
     text-decoration: underline;
-}
-
-@media (max-width: 620px) {
-    body {
-        padding-top: 92px;
-    }
-
-    nav {
-        height: 70px;
-        padding: 0 8px;
-    }
-
-    .logo {
-        font-size: 44px;
-        height: 50px;
-        width: 50px;
-    }
-
-    nav ul {
-        gap: 8px;
-        padding: 7px;
-        border-width: 4px;
-    }
-
-    nav a {
-        font-size: 12px;
-    }
 }
 
 /* opdracht 2 */
