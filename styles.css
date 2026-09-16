@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Koulen:700|Koulen:400');
 
-/* Root */
+/* --- Root --- */
 :root{
     --text: #f7ebeb;
     --background: #080303;
@@ -9,7 +9,7 @@
     --accent: #e24a4a;
 
 }
-/* Fonts */
+/* --- Fonts --- */
 
 body {
     margin: 0;
@@ -53,6 +53,21 @@ nav {
     top: 15px;
     width: 90%;
     left: 5%;
+
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.95);
+}
+
+nav:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+
+    /* https://cssbud.com/css-generator/css-glow-generator/ */
+    -webkit-box-shadow:0px 0px 120px 15px rgba(226,58,74,0.9);
+    -moz-box-shadow: 0px 0px 120px 15px rgba(226,58,74,0.9);
+    box-shadow: 0px 0px 120px 15px rgba(226,58,74,0.9);
 }
 
 nav .logo a {
@@ -89,11 +104,13 @@ nav .button_container a {
     display: inline-block;
     padding: 3px 6px;
     border-radius: 30px;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 nav .button_container a:hover {
     background-color: var(--accent);
+    transform: scale(1.25);
+    transition: all 0.3s ease-in-out;
 }
 
 nav .logo img {
