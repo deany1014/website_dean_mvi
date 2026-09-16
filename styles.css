@@ -47,6 +47,22 @@ nav .button_container a:hover {
     background-color: rgb(226, 74, 74);
     border-radius: 30px;
     padding: 5px 10px;
+    transition: ease-in-out 0.3s;
+}
+
+nav .logo img {
+    height: 40px;
+    width: auto;
+    padding: 10px;
+}
+
+nav .logo img:hover {
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    rotate: 90deg;
+
+    transition: ease-in-out 0.3s;
 }
 
 /* opdracht 2 */
