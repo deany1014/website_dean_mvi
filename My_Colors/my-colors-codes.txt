@@ -6,7 +6,7 @@ Your selected colors:
     Secondary: #861d1d - rgb(134, 29, 29) - hsl(0, 64%, 32%)
     Accent: #e24a4a - rgb(226, 74, 74) - hsl(0, 72%, 59%)
 
-Realtime Colors link for selected colors: https://www.realtimecolors.com/?colors=f7ebeb-080303-bb0000-861d1d-e24a4a&fonts=Inter-Inter
+Realtime Colors link for selected colors: https://www.realtimecolors.com/?colors=f7ebeb-080303-bb0000-861d1d-e24a4a&fonts=Koulen-Koulen
 
 Thanks for using RealtimeColors.com!
 
