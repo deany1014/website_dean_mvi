@@ -1,0 +1,14 @@
+Your selected colors:
+
+    Text: #f7ebeb - rgb(247, 235, 235) - hsl(0, 43%, 95%)
+    Background: #080303 - rgb(8, 3, 3) - hsl(0, 45%, 2%)
+    Primary: #bb0000 - rgb(187, 0, 0) - hsl(0, 100%, 37%)
+    Secondary: #861d1d - rgb(134, 29, 29) - hsl(0, 64%, 32%)
+    Accent: #e24a4a - rgb(226, 74, 74) - hsl(0, 72%, 59%)
+
+Realtime Colors link for selected colors: https://www.realtimecolors.com/?colors=f7ebeb-080303-bb0000-861d1d-e24a4a&fonts=Inter-Inter
+
+Thanks for using RealtimeColors.com!
+
+OLD
+https://www.realtimecolors.com/?colors=ffffff-000000-df8989-941414-fa2929&fonts=Inter-Inter
