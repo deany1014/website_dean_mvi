@@ -48,10 +48,18 @@ nav {
     padding:  0 5px;
     position: fixed;
 
+    outline: 4px solid var(--accent);
     border-radius: 10px;
     top: 15px;
     width: 90%;
     left: 5%;
+}
+
+nav .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text);
 }
 
 nav ul {
@@ -94,6 +102,7 @@ nav .logo img {
     padding: 10px;
     transition: ease-in-out 0.3s;
     margin-left: 20px;
+    margin-right: 10px;
 }
 
 nav .logo img:hover {
