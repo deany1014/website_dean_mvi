@@ -10,7 +10,7 @@
 
 }
 /* --- Fonts --- */
-
+/* https://www.realtimecolors.com/?colors=f7ebeb-080303-bb0000-861d1d-e24a4a&fonts=Koulen-Koulen */
 body {
     margin: 0;
     padding: 0;
@@ -114,6 +114,11 @@ nav .button_container a:hover {
     background-color: var(--accent);
     transform: scale(1.25);
     transition: all 0.3s ease-in-out;
+
+    /* https://cssbud.com/css-generator/css-glow-generator/ */
+    -webkit-box-shadow:0px 0px 15px 5px rgba(226,74,74,1);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(226,74,74,1);
+    box-shadow: 0px 0px 15px 5px rgba(226,74,74,1);
 }
 
 nav .logo img {
