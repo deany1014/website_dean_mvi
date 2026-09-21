@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Koulen:700|Koulen:400');
 
 /* --- Root --- */
+
+/* debugging tool to see the outlines of all elements on the page */
+* {
+    outline: 1px solid yellow;
+}
+
+
 :root{
     --text: #f7ebeb;
     --background: #080303;
@@ -20,7 +27,7 @@ body {
  
   font-family: 'Koulen';
   font-weight: 400;
-}
+}   
 
 h1, h2, h3, h4, h5 {
   font-family: 'Koulen';
@@ -173,24 +180,37 @@ nav .logo img:hover {
     padding: 10px;
 }
 
-.kolom1, .kolom2, .kolom3 {
+.kolom1, .IBJJF, .kolom3 {
     flex: 1;
     border-radius: 10px;
-    max-width: 400px;
+    /* max-width: 400px; */
 }
 
 .kolom1 {
+    max-height: 250px;
     background-color: lightblue;
 }
 
-.kolom2 {
+.IBJJF img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.IBJJF {
     background-color: rgb(253, 100, 100);
-    max-width: 800px;
+    /* max-width: 800px; */
+    max-width: 1000px;
     flex: 2;
+    max-height: 250px;
 }
 
 .kolom3 {
     background-color: lightgreen;
+    max-width: 400px;
+    margin-left: -50px;
+    opacity: 0.8;
+    margin-top: 100px;
 }
 
 /* --- Footer --- */
