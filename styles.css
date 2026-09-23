@@ -160,56 +160,7 @@ nav .logo img:hover {
 }
 
 /* --- opdracht 3 --- */
-.container-02 {
-    display: flex;
-    gap: 20px;
-    padding: 10px;
-    justify-content: center;
-}
 
-.container-02 h1 {
-    flex: 1;
-    margin: 0;
-    padding-top: 10px;
-    text-align: center;
-}
-
-.container-02 p {
-    flex: 1;
-    margin: 0;
-    padding: 10px;
-    font-size: 25px;
-}
-
-.IBJJF, .kolom3 {
-    flex: 1;
-    border-radius: 10px;
-    /* max-width: 400px; */
-}
-
-.kolom3 {
-    background-color: var(--secondary);
-    max-width: 1500px;
-    flex: 2;
-    max-height: 250px;
-}
-
-.IBJJF img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transform: scale(0.8);
-}
-
-.IBJJF {
-    background-color: blue;
-    max-width: 500px;
-    margin-left: -500px;
-    opacity: 0.8;
-    margin-top: 200px;
-    color: var(--text);
-    text-align: center;
-}
 
 /* --- Footer --- */
 
