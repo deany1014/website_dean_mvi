@@ -23,7 +23,7 @@ body {
     padding: 0;
 
     /* Ruimte voor de footer */
-    padding-bottom: 150px; 
+    padding-bottom: 175px; 
  
   font-family: 'Koulen';
   font-weight: 400;
@@ -161,7 +161,36 @@ nav .logo img:hover {
 
 /* --- Index Panelen --- */
 
+.index-panelen {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 40px;
+}
 
+.index-panelen h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    max-height: auto;
+    position: fixed absolute;
+}
+
+.index-panelen p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.index-container .index-panelen .IBJJF, .index-container .index-panelen .panel-01 {
+    border-radius: 10px;
+    outline: 4px solid darkblue;
+}
+
+.index-container .index-panelen .IBJJF img {
+    transform: scale(0.8);
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
 
 /* --- Footer --- */
 
