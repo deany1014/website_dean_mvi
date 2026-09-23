@@ -178,6 +178,7 @@ nav .logo img:hover {
     flex: 1;
     margin: 0;
     padding: 10px;
+    font-size: 25px;
 }
 
 .IBJJF, .kolom3 {
@@ -188,8 +189,7 @@ nav .logo img:hover {
 
 .kolom3 {
     background-color: var(--secondary);
-    /* max-width: 800px; */
-    max-width: 1000px;
+    max-width: 1500px;
     flex: 2;
     max-height: 250px;
 }
@@ -198,15 +198,17 @@ nav .logo img:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transform: scale(0.8);
 }
 
 .IBJJF {
     background-color: blue;
-    max-width: 400px;
-    margin-left: -400px;
+    max-width: 500px;
+    margin-left: -500px;
     opacity: 0.8;
     margin-top: 200px;
     color: var(--text);
+    text-align: center;
 }
 
 /* --- Footer --- */
