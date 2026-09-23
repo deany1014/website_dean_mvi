@@ -1,0 +1,12 @@
+{
+  "name": "website-dean-mvi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "node make-devtools.js && npx serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
