@@ -180,15 +180,10 @@ nav .logo img:hover {
     padding: 10px;
 }
 
-.kolom1, .IBJJF, .kolom3 {
+.IBJJF, .kolom3 {
     flex: 1;
     border-radius: 10px;
     /* max-width: 400px; */
-}
-
-.kolom1 {
-    max-height: 250px;
-    background-color: lightblue;
 }
 
 .kolom3 {
@@ -211,6 +206,7 @@ nav .logo img:hover {
     margin-left: -400px;
     opacity: 0.8;
     margin-top: 200px;
+    color: var(--text);
 }
 
 /* --- Footer --- */
