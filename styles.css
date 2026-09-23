@@ -105,21 +105,21 @@ nav a {
 
 }
 
-nav .button_container {
+nav .button-container {
     outline: 8px solid var(--secondary);
     background-color: var(--primary);
     border-radius: 30px;
     margin: 20px;
 }
 
-nav .button_container a {
+nav .button-container a {
     display: inline-block;
     padding: 3px 6px;
     border-radius: 30px;
     transition: all 0.3s ease-in-out;
 }
 
-nav .button_container a:hover {
+nav .button-container a:hover {
     background-color: var(--accent);
     transform: scale(1.25);
     transition: all 0.3s ease-in-out;
@@ -159,7 +159,8 @@ nav .logo img:hover {
     object-fit: cover;
 }
 
-/* --- opdracht 3 --- */
+/* --- Index Panelen --- */
+
 
 
 /* --- Footer --- */
