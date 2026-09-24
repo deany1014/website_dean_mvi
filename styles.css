@@ -24,6 +24,9 @@ body {
 
     /* Ruimte voor de footer */
     padding-bottom: 175px; 
+
+    /* Ruimte voor de header */
+    margin-top: 175px;
  
   font-family: 'Koulen';
   font-weight: 400;
