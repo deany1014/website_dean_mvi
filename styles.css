@@ -162,7 +162,9 @@ nav .logo img:hover {
 /* --- Index Panelen --- */
 
 .index-panelen {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
     justify-content: center;
     margin-top: 40px;
     gap: 40px;
@@ -172,7 +174,6 @@ nav .logo img:hover {
     text-align: center;
     margin-bottom: 20px;
     max-height: auto;
-    position: fixed absolute;
 }
 
 .index-panelen p {
@@ -180,10 +181,24 @@ nav .logo img:hover {
     margin-top: 10px;
 }
 
+.index-panelen .panel-01 {
+    grid-column: 1/-1;
+    max-width: 600px;
+    justify-self: center;
+}
+
 .index-container .index-panelen .IBJJF, .index-container .index-panelen .panel-01 {
     border-radius: 10px;
     outline: 4px solid darkblue;
 }
+
+.index-container .index-panelen .IBJJF {
+    grid-column: 3;
+    max-width: 300px;
+    margin: -10px;
+    
+}
+
 
 .index-container .index-panelen .IBJJF img {
     transform: scale(0.8);
