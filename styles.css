@@ -165,8 +165,7 @@ nav .logo img:hover {
 /* --- Index Panelen --- */
 
 .index-panelen {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: block;
 
     justify-content: center;
     margin-top: 40px;
@@ -175,39 +174,58 @@ nav .logo img:hover {
 
 .index-panelen h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     max-height: auto;
+    color: white;
 }
 
 .index-panelen p {
     text-align: center;
-    margin-top: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+    color: white;
 }
 
-.index-panelen .panel-01 {
-    grid-column: 1/-1;
-    max-width: 600px;
-    justify-self: center;
-}
-
-.index-container .index-panelen .IBJJF, .index-container .index-panelen .panel-01 {
+.index-panelen .IBJJF, .index-panelen .panel-01, .index-panelen .panel-02 {
     border-radius: 10px;
     outline: 4px solid darkblue;
 }
 
-.index-container .index-panelen .IBJJF {
-    grid-column: 3;
-    max-width: 300px;
-    margin: -10px;
-    
+.index-panelen .panel-01 {
+    grid-column: 1/-1;
+    width: 1200px;
+    justify-self: center;
+    background-color: var(--background);
+
+    position: relative;
+    z-index: 1;
 }
 
+.index-panelen .panel-02 {
+    background-color: cadetblue;
+    width: 850px;
+    margin-top: -145px;
+    margin-left: -350px;
+    justify-self: center;
+}
+
+.index-panelen .IBJJF {
+    grid-column: 3;
+    max-width: 300px;
+    margin-left: 850px;
+    margin-top: -80px;
+    justify-self: center;
+    background-color: blue;
+    opacity: 0.6;
+
+    position: relative;
+    z-index: 2;
+}
 
 .index-container .index-panelen .IBJJF img {
     transform: scale(0.8);
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
 }
 
 /* --- Footer --- */
