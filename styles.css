@@ -229,10 +229,17 @@ nav .logo img:hover {
 }
 /* --- Bezoek ons banner --- */
 .visit-us-banner {
-    /* background-color: #bb0000; */
+    background-color: var(--background);
+    color: white;
     display:flex;
     justify-content: center;
-    gap: 50px;
+    gap: 200px;
+    margin-top: 40px;
+}
+
+.maps {
+    margin: 10px;
+    max-height: 450px;
 }
 
 /* --- Footer --- */
