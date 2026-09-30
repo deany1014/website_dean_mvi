@@ -227,6 +227,13 @@ nav .logo img:hover {
     width: 100%;
     height: auto;
 }
+/* --- Bezoek ons banner --- */
+.visit-us-banner {
+    /* background-color: #bb0000; */
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+}
 
 /* --- Footer --- */
 
