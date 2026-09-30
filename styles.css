@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Koulen:700|Koulen:400');
+@import url('https://fonts.googleapis.com/css?family=Open%20Sans:700|Open%20Sans:400');
 
 /* --- Root --- */
 
@@ -17,7 +17,7 @@
 
 }
 /* --- Fonts --- */
-/* https://www.realtimecolors.com/?colors=f7ebeb-080303-bb0000-861d1d-e24a4a&fonts=Koulen-Koulen */
+/* https://www.realtimecolors.com/?colors=f7ebeb-080303-bb0000-861d1d-e24a4a&fonts=Open%20Sans-Open%20Sans */
 body {
     margin: 0;
     padding: 0;
@@ -26,14 +26,19 @@ body {
     padding-bottom: 175px; 
 
     /* Ruimte voor de header */
-    margin-top: 175px;
+    margin-top: 185px;
  
-  font-family: 'Koulen';
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }   
 
+* p {
+    /* font-family: 'Open Sans' sans-serif; */
+    font-size: 21px;
+}
+
 h1, h2, h3, h4, h5 {
-  font-family: 'Koulen';
+  font-family: "Open Sans Condensed", sans-serif;
   font-weight: 700;
 }
 
@@ -240,6 +245,32 @@ nav .logo img:hover {
 .maps {
     margin: 10px;
     max-height: 450px;
+}
+
+/* --- Over Ons --- */
+.over-ons-body {
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 100%;
+}
+.over-ons-body h1 {
+    justify-self: center;
+}
+
+.over-ons-body .panel-01, .over-ons-body .panel-02 {
+    border-radius: 10px;
+    outline: 10px solid rgb(255, 0, 0);
+    max-width: 1400px;
+    padding-inline: 15px;
+}
+
+.over-ons-body .panel-01 {
+    margin-left: 150px;
+}
+
+.over-ons-body .panel-02 {
+    margin-right: 150px;
+    justify-self: right;
 }
 
 /* --- Footer --- */
