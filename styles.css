@@ -273,6 +273,33 @@ nav .logo img:hover {
     justify-self: right;
 }
 
+
+.over-ons-banner {
+    color: white;
+    background-color: black;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+
+.over-ons-banner-text-container {
+    justify-self: center;
+}
+
+.over-ons-banner .panelen {
+    display: flex;
+    gap: 100px;
+    margin-inline: 200px;
+}
+
+.over-ons-banner-panel-02, .over-ons-banner-panel-01 {
+    color: black;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 75px;
+    padding-inline: 50px;
+
+}
+
 /* --- Footer --- */
 
 .footer {
