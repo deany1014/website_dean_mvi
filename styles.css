@@ -300,6 +300,34 @@ nav .logo img:hover {
 
 }
 
+/* --- Rooster --- */
+
+.calendar  {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 150px repeat(7, 1fr);
+    background-color: var(--accent);
+    padding: 25px;
+    border-radius: 15px;
+    gap: 2px;
+}
+
+.calendar > div {
+    background-color: white;
+}
+
+.day {
+    padding-inline: 10px;
+}
+
+.calendar h3, .calendar h4 {
+    justify-self: center;
+}
+
+.calendar .time {
+    grid-column: 1;
+}
+
 /* --- Footer --- */
 
 .footer {
