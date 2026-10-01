@@ -328,6 +328,39 @@ nav .logo img:hover {
     grid-column: 1;
 }
 
+/* --- Contact --- */
+
+.contactbox {
+    display: flex;
+    justify-self: center;
+    outline: 10px solid yellow;
+    padding: 10px;
+    border-radius: 15px;
+    width: 1200px;
+    height: 800px;
+
+}
+
+.message {
+    background-color: gray;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+.message > input {
+    width: 1190px;
+
+    margin: 10px;
+}
+
+.contactbox > form > input {
+    width: 1190px;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin: 10px;
+} 
+
+
 /* --- Footer --- */
 
 .footer {
