@@ -28,8 +28,6 @@ loadPartial("#site-footer", "../static/partials/footer.html");
   }
 
   function loadKickAss() {
-    // zelfde als de officiele embed-snippet, maar direct aangeroepen
-    // i.p.v. via een javascript: link
     window.KICKASS_SITE_KEY = SITE_KEY;
     var el = document.createElement("script");
     el.src = "https://hi.kickassapp.com/kickass-mysite.js";
@@ -61,10 +59,20 @@ loadPartial("#site-footer", "../static/partials/footer.html");
 
     if (matches) {
       resetBuffer();
-      // voorkom dat het spel meerdere keren start als je nog een keer typt
-      if (!window.KICKASSGAME) {
-        loadKickAss();
+
+      // Reset de globale variabele zodat de game opnieuw kan initialiseren
+      if (window.KICKASSGAME) {
+        window.KICKASSGAME = null;
       }
+
+      // Verwijder eventueel een eerder geladen script-element
+      var existingScript = document.querySelector('script[src="https://hi.kickassapp.com/kickass-mysite.js"]');
+      if (existingScript) {
+        existingScript.remove();
+      }
+
+      // Start de game opnieuw op
+      loadKickAss();
     }
   }
 
