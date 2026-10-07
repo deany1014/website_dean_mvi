@@ -332,9 +332,11 @@ nav .logo img:hover {
 
 .message > input {
     width: 1190px;
-
-    margin: 10px;
+    margin-inline: 10px;
+    margin-top: 10px;
 }
+
+
 
 .contactbox > form > input {
     width: 1190px;
