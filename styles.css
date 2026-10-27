@@ -1,69 +1,59 @@
-@import url('https://fonts.googleapis.com/css?family=Open%20Sans:700|Open%20Sans:400');
-
-/* --- Root --- */
+/* Lettertypen: Koulen voor kopjes, Open Sans voor overige tekst */
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Open+Sans:wght@400;700&display=swap');
 
 /* debugging tool to see the outlines of all elements on the page */
 /* * {
     outline: 1px solid yellow;
 } */
 
+/* --- Kleurenpalet (zie stijlblad) --- */
+/* https://www.realtimecolors.com/?colors=f7ebeb-080303-bb0000-861d1d-e24a4a&fonts=Koulen-Open%20Sans */
+:root {
+    --primair: #bb0000;    /* knoppen en belangrijke onderdelen */
+    --secundair: #861d1d;  /* randen en accenten */
+    --accent: #e24a4a;     /* hover, call-to-action en glow */
+    --donker: #080303;     /* tekst, header, footer en banners */
+    --licht: #f7ebeb;      /* achtergrond en tekst op donker */
 
-:root{
-    --text: #f7ebeb;
-    --background: #080303;
-    --primary: #bb0000;
-    --secondary: #861d1d;
-    --accent: #e24a4a;
-
+    /* glow-effect dat overal op de site terugkomt */
+    /* https://cssbud.com/css-generator/css-glow-generator/ */
+    --glow: 0px 0px 60px 10px rgba(226, 74, 74, 0.6);
 }
-/* --- Fonts --- */
-/* https://www.realtimecolors.com/?colors=f7ebeb-080303-bb0000-861d1d-e24a4a&fonts=Open%20Sans-Open%20Sans */
+
+/* --- Algemeen --- */
 body {
     margin: 0;
-    padding: 0;
+    background-color: var(--licht);
+    color: var(--donker);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
 
-    /* Ruimte voor de footer */
-    padding-bottom: 175px; 
-
-    /* Ruimte voor de header */
-    margin-top: 185px;
- 
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-}   
-
-* p {
-    /* font-family: 'Open Sans' sans-serif; */
-    font-size: 21px;
+    /* ruimte zodat de vaste footer geen tekst bedekt */
+    padding-bottom: 150px;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: 700;
+h1, h2, h3 {
+    font-family: 'Koulen', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
 }
 
-html {font-size: 100%;} /* 16px */
+h1 {font-size: 56px;}
+h2 {font-size: 40px;}
+h3 {font-size: 28px;}
 
-h1 {font-size: 4.210rem; /* 67.36px */}
-
-h2 {font-size: 3.158rem; /* 50.56px */}
-
-h3 {font-size: 2.369rem; /* 37.92px */}
-
-h4 {font-size: 1.777rem; /* 28.48px */}
-
-h5 {font-size: 1.333rem; /* 21.28px */}
-
-small {font-size: 0.750rem; /* 12px */}
+p {
+    line-height: 1.6;
+}
 
 /* --- Header --- */
-
 nav {
-    background-color: var(--background);
+    background-color: var(--donker);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:  0 5px;
+    padding: 0 5px;
     position: fixed;
 
     outline: 4px solid var(--accent);
@@ -81,48 +71,58 @@ nav {
 
 nav:hover {
     opacity: 1;
-    transition: all 0.3s ease-in-out;
     transform: scale(1);
-
-    /* https://cssbud.com/css-generator/css-glow-generator/ */
-    -webkit-box-shadow:0px 0px 120px 15px rgba(226,58,74,0.9);
-    -moz-box-shadow: 0px 0px 120px 15px rgba(226,58,74,0.9);
-    box-shadow: 0px 0px 120px 15px rgba(226,58,74,0.9);
+    box-shadow: var(--glow);
 }
 
 nav .logo a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: var(--text);
+    color: var(--licht);
+}
+
+nav .logo h3 {
+    margin: 0;
+}
+
+nav .logo img {
+    height: 40px;
+    width: auto;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    transition: ease-in-out 0.3s;
+}
+
+nav .logo img:hover {
+    transform: scale(1.6) rotate(180deg);
 }
 
 nav ul {
     display: flex;
     gap: 20px;
-    margin-right: 20px;
+    margin: 0 20px;
+    padding: 5px 0;
     list-style: none;
-    color: var(--text);
     align-items: center;
 }
 
 nav a {
-    color: var(--text);
+    color: var(--licht);
     text-decoration: none;
-    transition: color 0.3s;
-
 }
 
 nav .button-container {
-    outline: 8px solid var(--secondary);
-    background-color: var(--primary);
+    outline: 8px solid var(--secundair);
+    background-color: var(--primair);
     border-radius: 30px;
     margin: 20px;
 }
 
 nav .button-container a {
     display: inline-block;
-    padding: 3px 6px;
+    padding: 3px 10px;
     border-radius: 30px;
     transition: all 0.3s ease-in-out;
 }
@@ -130,241 +130,197 @@ nav .button-container a {
 nav .button-container a:hover {
     background-color: var(--accent);
     transform: scale(1.25);
-    transition: all 0.3s ease-in-out;
-
-    /* https://cssbud.com/css-generator/css-glow-generator/ */
-    -webkit-box-shadow:0px 0px 15px 5px rgba(226,74,74,1);
-    -moz-box-shadow: 0px 0px 15px 5px rgba(226,74,74,1);
-    box-shadow: 0px 0px 15px 5px rgba(226,74,74,1);
+    box-shadow: 0px 0px 15px 5px var(--accent);
 }
 
-nav .logo img {
-    height: 40px;
-    width: auto;
-    padding: 10px;
-    transition: ease-in-out 0.3s;
-    margin-left: 20px;
-    margin-right: 10px;
-}
-
-nav .logo img:hover {
-    transform: scale(1.6) rotate(180deg);
-
-    transition: ease-in-out 0.3s;
-}
-
-/* --- Hero Container --- */
-.hero-container {
-    position: relative;
+/* --- Hero (grote foto bovenaan elke pagina) --- */
+.hero {
     width: 100%;
-    height: 100vh; /* full screen height */
-}
-
-.hero-container img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    height: 60vh;
     object-fit: cover;
-}
-
-/* --- Index Panelen --- */
-
-.index-panelen {
     display: block;
-
-    justify-content: center;
-    margin-top: 40px;
-    gap: 40px;
+    border-bottom: 8px solid var(--primair);
 }
 
-.index-panelen h2 {
+/* op de homepage is de foto schermvullend */
+.hero-home {
+    height: 100vh;
+}
+
+/* --- Pagina-indeling --- */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.page-title {
     text-align: center;
-    margin-bottom: 10px;
-    max-height: auto;
-    color: white;
+    margin-bottom: 40px;
 }
 
-.index-panelen p {
-    text-align: center;
-    margin: 10px;
-    margin-bottom: 15px;
-    color: white;
+.page-title h1 {
+    display: inline-block;
+    border-bottom: 5px solid var(--primair);
 }
 
-.index-panelen .IBJJF, .index-panelen .panel-01, .index-panelen .panel-02 {
+/* kaarten naast elkaar */
+.grid-2, .grid-3 {
+    display: grid;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.grid-2 {grid-template-columns: 1fr 1fr;}
+.grid-3 {grid-template-columns: 1fr 1fr 1fr;}
+
+/* --- Kaart (blok met tekst, op elke pagina dezelfde stijl) --- */
+.card {
+    background-color: var(--donker);
+    color: var(--licht);
+    border: 4px solid var(--secundair);
     border-radius: 10px;
-    outline: 4px solid darkblue;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
 }
 
-.index-panelen .panel-01 {
-    grid-column: 1/-1;
-    width: 850px;
-    margin-left: -350px;
-    justify-self: center;
-    background-color: var(--background);
-
-    position: relative;
-    z-index: 1;
+.grid-2 .card, .grid-3 .card {
+    margin-bottom: 0;
 }
 
-.index-panelen .panel-02 {
-    background-color: cadetblue;
-    width: 850px;
-    margin-top: -145px;
-    margin-left: -350px;
-    justify-self: center;
+.card:hover {
+    border-color: var(--accent);
+    box-shadow: var(--glow);
 }
 
-.index-panelen .IBJJF {
-    /* grid-column: 3; */
-    max-width: 300px;
-    margin-left: 850px;
-    margin-top: -80px;
-    justify-self: center;
-    background-color: blue;
-    /* opacity: 0.6; */
-
-    position: relative;
-    z-index: 2;
+.card h2 {
+    color: var(--accent);
 }
 
-.index-container .index-panelen .IBJJF img {
-    transform: scale(0.8);
-    width: 100%;
+.card-center {
+    text-align: center;
+}
+
+.ibjjf-logo {
+    width: 200px;
     height: auto;
 }
-/* --- Bezoek ons banner --- */
-.visit-us-banner {
-    background-color: var(--background);
-    color: white;
-    display:flex;
-    justify-content: center;
-    gap: 200px;
-    margin-top: 40px;
+
+/* --- Knop --- */
+.button {
+    display: inline-block;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--primair);
+    color: var(--licht);
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-.maps {
-    margin: 10px;
-    max-height: 450px;
+.button:hover {
+    background-color: var(--accent);
+    transform: scale(1.05);
+    box-shadow: var(--glow);
 }
 
-/* --- Over Ons --- */
-.over-ons-body {
-    /* display: flex; */
-    /* justify-content: center; */
-    width: 100%;
-}
-.over-ons-body h1 {
-    justify-self: center;
-}
-
-.over-ons-body .panel-01, .over-ons-body .panel-02 {
-    border-radius: 10px;
-    outline: 10px solid rgb(255, 0, 0);
-    max-width: 1400px;
-    padding-inline: 15px;
+/* --- Banner (donkere balk over de hele breedte) --- */
+.banner {
+    background-color: var(--donker);
+    color: var(--licht);
+    border-top: 8px solid var(--primair);
+    border-bottom: 8px solid var(--primair);
+    padding: 40px 20px;
 }
 
-.over-ons-body .panel-01 {
-    margin-left: 150px;
-}
-
-.over-ons-body .panel-02 {
-    margin-right: 150px;
-    justify-self: right;
-}
-
-
-.over-ons-banner {
-    color: white;
-    background-color: black;
-    padding-bottom: 10px;
-    margin-top: 50px;
-}
-
-.over-ons-banner-text-container {
-    justify-self: center;
-}
-
-.over-ons-banner .panelen {
+.banner-adres {
     display: flex;
-    gap: 100px;
-    margin-inline: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
 }
 
-.over-ons-banner-panel-02, .over-ons-banner-panel-01 {
-    color: black;
-    margin-top: 10px;
-    background-color: white;
-    border-radius: 75px;
-    padding-inline: 50px;
+.banner-adres p {
+    margin: 5px 0;
+}
 
+.banner iframe {
+    border: 4px solid var(--secundair);
+    border-radius: 10px;
+}
+
+.banner-quote {
+    text-align: center;
+}
+
+.banner-quote h2 {
+    color: var(--accent);
 }
 
 /* --- Rooster --- */
-
-.calendar  {
-    display: grid;
-    justify-self: center;
-    background-color: var(--accent);
-    padding: 25px;
-    border-radius: 15px;
-}
-
-
-/* --- Contact --- */
-
-.contactbox {
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    width: min(700px, 92%);
-    margin: 40px auto;
-    padding: 30px;
-    outline: 10px solid var(--accent);
-    border-radius: 15px;
-    background-color: black;
-    color: white;
-    transform: scale(1);
-    transition: all ease-in-out 0.2s;
-}
-
-.contactbox:hover {
-    transform: scale(1.05);
-    transition: all ease-in-out 0.2s;
-
-    /* https://cssbud.com/css-generator/css-glow-generator/ */    
-    -webkit-box-shadow:0px 0px 120px 15px rgba(226,58,74,0.9);
-    -moz-box-shadow: 0px 0px 120px 15px rgba(226,58,74,0.9);
-    box-shadow: 0px 0px 120px 15px rgba(226,58,74,0.9);
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+.rooster {
     width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+.rooster th {
+    background-color: var(--primair);
+    font-family: 'Koulen', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.rooster td {
+    padding: 15px 20px;
+    border-bottom: 2px solid var(--secundair);
+}
+
+.rooster tr:hover td {
+    background-color: var(--secundair);
+}
+
+/* --- Prijzen --- */
+.prijs {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: var(--primair);
+    font-family: 'Koulen', sans-serif;
+    font-size: 36px;
+}
+
+/* --- Contactformulier --- */
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    margin-bottom: 18px;
 }
 
 .form-group label {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    box-sizing: border-box;
     padding: 12px 16px;
-    border: 2px solid black;
+    border: 2px solid var(--secundair);
     border-radius: 15px;
     font: inherit;
-    background-color: #f2f2f2;
+    background-color: var(--licht);
 }
 
 .form-group textarea {
@@ -378,84 +334,12 @@ nav .logo img:hover {
     background-color: white;
 }
 
-.contact-submit {
-    align-self: flex-end;
-    padding: 12px 32px;
-    border: 2px solid black;
-    border-radius: 25px;
-    background-color: var(--accent);
-    font: inherit;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.1s ease;
-}
-
-.contact-submit:hover {
-    transform: scale(1.05);
-
-    /* https://cssbud.com/css-generator/css-glow-generator/ */
-    -webkit-box-shadow:0px 0px 120px 15px rgba(226,58,74,0.9);
-    -moz-box-shadow: 0px 0px 120px 15px rgba(226,58,74,0.9);
-    box-shadow: 0px 0px 120px 15px rgba(226,58,74,0.9);
-}
-
-/* --- Prijzen --- */ 
-
-.prijzen {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.prijzen > * {
-    outline: 1.5px solid var(--secondary);
-    max-width: 600px;
-    height: 400px;
-    color: white;
-    border-radius: 10px;
-    background-color: var(--primary);
-}
-
-.prijs {
-    justify-self: center;
-    border-radius: 10px;
-    /* margin-bottom: 10px; */
-    background-color: #080303;
-    color: white;
-    padding: 5px;
-    transition: 0.5s ease-in-out;
-
-}
-
-.prijs:hover {
-    transform: scale(1.2);
-    transition: 0.5s ease-in-out;
-
-    /* https://cssbud.com/css-generator/css-glow-generator/
-    -webkit-box-shadow:0px 0px 120px 15px rgba(226,58,74,0.9);
-    -moz-box-shadow: 0px 0px 120px 15px rgba(226,58,74,0.9);
-    box-shadow: 0px 0px 120px 15px rgba(226,58,74,0.9); */
-}
-
-.prijs > h4 {
-    margin: 0px;
-}
-
-.prijzen > * > h2 {
-    justify-self: center;
-}
-
-.prijzen > * > p {
-    margin-inline: 40px;
-}
-
 /* --- Footer --- */
-
 .footer {
-    background-color: var(--background);
-    color: var(--text);
+    background-color: var(--donker);
+    color: var(--licht);
     text-align: center;
-    padding: 10px;
+    padding: 5px 10px;
     position: fixed;
     z-index: 1000;
 
@@ -472,11 +356,19 @@ nav .logo img:hover {
 
 .footer:hover {
     opacity: 1;
-    transition: all 0.3s ease-in-out;
     transform: scale(1);
+    box-shadow: var(--glow);
+}
 
-    /* https://cssbud.com/css-generator/css-glow-generator/ */
-    -webkit-box-shadow:0px 0px 120px 15px rgba(226,58,74,0.9);
-    -moz-box-shadow: 0px 0px 120px 15px rgba(226,58,74,0.9);
-    box-shadow: 0px 0px 120px 15px rgba(226,58,74,0.9);
+.footer p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.footer a {
+    color: var(--accent);
+}
+
+.footer a:hover {
+    color: var(--licht);
 }

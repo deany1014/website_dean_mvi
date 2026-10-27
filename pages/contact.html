@@ -1,27 +1,30 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dodo Jiu Jitsu - Contact</title>
     <link rel="shortcut icon" type="image/png" href="../static/images/logo.png">
-    
+
     <script src="../static/js/partials.js" defer></script>
     <link rel="stylesheet" href="../styles.css">
 </head>
-<body style="margin-top: 0;">
+
+<body>
 
     <header id="site-header"></header>
 
-    <div class="hero-container" style="height: 80%;">
-        <img src="../static/images/fotos/200728-sportcentrum-de-pijp-68152_1.jpg" alt="">
-    </div>
+    <img class="hero" src="../static/images/fotos/20261025_170844.jpg" alt="Training op de mat">
 
-    <div style="justify-content: center; display: flex; margin-top: -35px;">
-        <h1 style="border-bottom: 5px solid black;">Contactpagina</h1>
-    </div>
+    <div class="container">
 
-    <div class="contactbox">
-        <form action="" method="post" class="contact-form">
+        <div class="page-title">
+            <h1>Contact</h1>
+        </div>
+
+        <form action="" method="post" class="card contact-form">
+            <h2>Stuur ons een bericht</h2>
+
             <div class="form-group">
                 <label for="naam">Naam</label>
                 <input type="text" id="naam" name="naam" placeholder="Je naam" required>
@@ -42,35 +45,31 @@
                 <textarea id="bericht" name="bericht" rows="6" placeholder="Je bericht" required></textarea>
             </div>
 
-            <button type="submit" class="contact-submit">Verstuur</button>
+            <button type="submit" class="button">Verstuur</button>
         </form>
+
     </div>
-    
-    <div class="visit-us-banner">
-        <div class="visit-us-text-container">
-            <h1>Bezoek ons op:</h1>
+
+    <div class="banner banner-adres">
+        <div>
+            <h2>Bezoek ons op:</h2>
             <p>Sportcentrum De Pijp</p>
             <p>Lizzy Ansinghstraat 88</p>
             <p>1072 RD Amsterdam</p>
-
         </div>
 
-        <div class="maps">
-            <iframe 
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=Sportcentrum%20De%20Pijp%2C%20Lizzy%20Ansinghstraat%2C%20Amsterdam%2C%20Nederland&zoom=15&maptype=roadmap" 
-            width="600" 
-            height="450" 
-            style="border:0; border-radius: 10px;" 
-            allowfullscreen="" 
-            loading="lazy" 
+        <iframe
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=Sportcentrum%20De%20Pijp%2C%20Lizzy%20Ansinghstraat%2C%20Amsterdam%2C%20Nederland&zoom=15&maptype=roadmap"
+            width="600"
+            height="400"
+            allowfullscreen=""
+            loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-
+        </iframe>
     </div>
-
 
     <footer id="site-footer"></footer>
 
 </body>
+
 </html>
