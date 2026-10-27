@@ -7,24 +7,24 @@ loadPartial("#site-header", "../static/partials/header.html");
 loadPartial("#site-footer", "../static/partials/footer.html");
 
 /**
- * Start Kick Ass via een geheime toetsenreeks in plaats van een knop.
- * Voeg dit script toe op elke pagina (bijv. samen met je partials,
- * of los in header.html) zodat het overal actief is.
+ * Geheime toetsenreeksen in plaats van knoppen:
+ * - "dodogun"  start Kick Ass
+ * - "nakijken" opent het stijlblad
+ * Dit script staat op elke pagina, dus het werkt overal.
  *
  * Vul hieronder je eigen SITE_KEY in zodra je die hebt.
  */
 (function () {
   // ---- instellingen ----
   var SITE_KEY = "REPLACE_WITH_YOUR_SITE_KEY"; // jouw echte kickassapp.com site key
-  var SEQUENCE = ["d", "o", "d", "o", "g", "u", "n"]; // toetsenreeks die het spel triggert
   var RESET_DELAY_MS = 2000; // hoelang je hebt tussen toetsaanslagen voor het reset
 
   // ---- interne state ----
-  var buffer = [];
+  var typed = ""; // de laatst getypte letters
   var resetTimer = null;
 
   function resetBuffer() {
-    buffer = [];
+    typed = "";
   }
 
   function loadKickAss() {
@@ -41,23 +41,20 @@ loadPartial("#site-footer", "../static/partials/footer.html");
       return;
     }
 
-    var key = e.key.toLowerCase();
-    buffer.push(key);
+    typed += e.key.toLowerCase();
 
     // reset-timer: als je te langzaam typt, begint de reeks opnieuw
     clearTimeout(resetTimer);
     resetTimer = setTimeout(resetBuffer, RESET_DELAY_MS);
 
-    // houd de buffer even lang als de reeks
-    if (buffer.length > SEQUENCE.length) {
-      buffer.shift();
+    // "nakijken" getypt: open het stijlblad
+    if (typed.endsWith("nakijken")) {
+      resetBuffer();
+      window.location.href = "../stijlblad.html";
     }
 
-    // vergelijk buffer met de gewenste reeks
-    var matches = buffer.length === SEQUENCE.length &&
-      buffer.every(function (k, i) { return k === SEQUENCE[i]; });
-
-    if (matches) {
+    // "dodogun" getypt: start Kick Ass
+    if (typed.endsWith("dodogun")) {
       resetBuffer();
 
       // Reset de globale variabele zodat de game opnieuw kan initialiseren
